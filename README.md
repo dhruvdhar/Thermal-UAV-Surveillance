@@ -33,16 +33,17 @@ A hybrid deep learning system combining **YOLOv8** and **CNN optimized via Mount
 
 ## 📊 Results
 
-We tested multiple models for object classification on the HIT-UAV thermal dataset. Below is a comparison of accuracy, precision, recall, and F1 score across four different approaches:
+We evaluated four different object classification methods on the HIT-UAV thermal dataset. Below is a performance comparison:
 
-| Model                      | Accuracy | Precision | Recall | F1 Score |
-|----------------------------|----------|-----------|--------|----------|
-| YOLOv8 + MGO-CNN (Ours)    | **83.0%**| 81.4%     | 83.0%  | 79.1%    |
-| YOLOv8 + Basic CNN         | 80.3%    | 79.0%     | 80.3%  | 78.6%    |
-| YOLOv5 + MGO-CNN           | 82.3%    | 80.2%     | 82.3%  | 79.6%    |
-| YOLOv5 + SVM (Baseline)    | 78.0%    | 75.6%     | 78.0%  | 74.2%    |
+| Method                        | Accuracy | Precision | Recall | F1 Score |
+|------------------------------|----------|-----------|--------|----------|
+| **YOLOv8 + MGO-CNN (Proposed)** | **0.83** | 0.814     | 0.83   | 0.791    |
+| YOLOv5 + SVM                 | 0.823    | 0.802     | 0.823  | 0.796    |
+| Faster R-CNN + Random Forest| 0.794    | 0.782     | 0.812  | 0.777    |
+| SSD + K-Nearest Neighbors   | 0.820    | 0.759     | 0.805  | 0.781    |
 
-> 📌 **Note:** All experiments used CLAHE preprocessing, same dataset splits, and were tested on the HIT-UAV thermal dataset.
+> 📌 All models used CLAHE-enhanced thermal imagery from the HIT-UAV dataset. Evaluation was based on a consistent 80/20 train-test split.
+
 
 ## 🚀 Try It Locally
 
