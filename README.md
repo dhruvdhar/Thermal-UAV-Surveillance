@@ -1,5 +1,7 @@
 # 🔥 Thermal UAV Object Detection for Night Surveillance
+![Thermal Detection Demo](docs/demo%20output.png)
 
+> 🔍 YOLOv8 + MGO-CNN detecting people and vehicles in thermal UAV footage (HIT-UAV dataset)
 A hybrid deep learning system combining **YOLOv8** and **CNN optimized via Mountain Gazelle Optimization (MGO)** for detecting and classifying objects in **thermal UAV images**, designed for real-time night-time surveillance applications.
 
 ## 📌 Project Overview
