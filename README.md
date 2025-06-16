@@ -33,9 +33,16 @@ A hybrid deep learning system combining **YOLOv8** and **CNN optimized via Mount
 
 ## 📊 Results
 
-| Model             | Accuracy | Precision | Recall | F1 Score |
-|------------------|----------|-----------|--------|----------|
-| YOLOv8 + MGO-CNN | **83%**  | 81.4%     | 83%    | 79.1%    |
+We tested multiple models for object classification on the HIT-UAV thermal dataset. Below is a comparison of accuracy, precision, recall, and F1 score across four different approaches:
+
+| Model                      | Accuracy | Precision | Recall | F1 Score |
+|----------------------------|----------|-----------|--------|----------|
+| YOLOv8 + MGO-CNN (Ours)    | **83.0%**| 81.4%     | 83.0%  | 79.1%    |
+| YOLOv8 + Basic CNN         | 80.3%    | 79.0%     | 80.3%  | 78.6%    |
+| YOLOv5 + MGO-CNN           | 82.3%    | 80.2%     | 82.3%  | 79.6%    |
+| YOLOv5 + SVM (Baseline)    | 78.0%    | 75.6%     | 78.0%  | 74.2%    |
+
+> 📌 **Note:** All experiments used CLAHE preprocessing, same dataset splits, and were tested on the HIT-UAV thermal dataset.
 
 ## 🚀 Try It Locally
 
